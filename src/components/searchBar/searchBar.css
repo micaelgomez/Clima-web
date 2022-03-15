@@ -1,0 +1,25 @@
+input {
+  margin-right: 5px;
+  border: 2px solid yellow;
+  color: black;
+  padding: 0.25em 1em;
+}
+
+#btn {
+  color: yellow;
+  background-color: black;
+  padding: 0.25em 1em;
+  transition: all 1s ease;
+  font-weight: 400;
+}
+
+#btn:hover {
+  color: black;
+  background-color: yellow;
+}
+
+@media screen and (max-width: 530px) {
+  input {
+    margin-bottom: 18px;
+  }
+}
