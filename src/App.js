@@ -3,15 +3,14 @@ import "./App.css";
 import Nav from "./components/nav/Nav";
 import Cards from "./components/cards/Cards";
 import { Footer } from "./components/footer/Footer";
-const { React_App_API_KEY, React_App_API_KEY_2,  } = process.env;
+const { React_App_API_KEY, React_App_API_KEY_2 } = process.env;
 
 export default function App() {
   const [cities, setCities] = useState([]);
 
   function onSearch(ciudad) {
-    
     fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${React_App_API_KEY_2}&units=metric`
+      `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${React_App_API_KEY_2}&units=metric`
     )
       .then((r) => r.json())
       .then((recurso) => {
@@ -29,7 +28,7 @@ export default function App() {
             latitud: recurso.coord.lat,
             longitud: recurso.coord.lon,
           };
-          
+
           setCities((oldCities) => [...oldCities, ciudad]);
         } else {
           alert("Ciudad no encontrada");
@@ -42,10 +41,8 @@ export default function App() {
 
   return (
     <div className="App">
-      <Nav onSearch={onSearch} />{" "}
-      <h1>The Weather Channel </h1>
-      <Cards cities={cities} onClose={onClose} />{" "}
-      <Footer />
+      <Nav onSearch={onSearch} /> <h1>The Weather Channel </h1>
+      <Cards cities={cities} onClose={onClose} /> <Footer />
     </div>
   );
 }
