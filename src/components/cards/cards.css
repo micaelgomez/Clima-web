@@ -24,6 +24,9 @@
 .cards-loading-title {
   text-align: center;
   border-bottom: 1px solid yellow;
+  margin-bottom: 1em;
+  padding: 1em;
+  text-transform: uppercase;
 }
 
 .cards-loading-img {
@@ -32,6 +35,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 530px) {
@@ -41,6 +45,9 @@
   }
   .cards-loading-title {
     text-align: left;
+    padding: 0;
   }
-
+  .cards-loading-wrapper {
+    padding: 0;
+  }
 }
