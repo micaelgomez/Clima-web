@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./searchBar.css";
+import SearchIcon from '@mui/icons-material/Search';
 
 export default function SearchBar({ onSearch }) {
   //CREAMOS UN ESTADO
@@ -20,6 +21,7 @@ export default function SearchBar({ onSearch }) {
         placeholder="City..."
       />
       <button id="btn" type="submit" value="Agregar">
+        <SearchIcon></SearchIcon>
         Search
       </button>
     </form>

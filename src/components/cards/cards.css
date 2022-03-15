@@ -3,3 +3,10 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.cards-loading {
+  max-width: 80%;
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  border-radius: 10px;
+}

@@ -1,9 +1,68 @@
 .footer {
-  border: 1px solid red;
+  background: rgba(0, 0, 0, 0.5);
   position: fixed;
   left: 0;
   bottom: 0;
   right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 75px;
 }
 
+.title {
+  display: flex;
+}
 
+.title #icon {
+  color: black;
+  margin-left: 5px;
+}
+
+.title h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0;
+}
+.title span {
+  color: yellow;
+  margin-left: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.copyRight {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 300;
+  margin: 0;
+}
+
+.contact {
+  color: white;
+}
+
+.contact:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 530px) {
+  
+  .title h3 {
+   font-size: 0.9rem;
+  }
+  .title span {
+    font-size: 0.9rem;
+   }
+   .title #icon {
+    color: black;
+    margin-left: 0;
+  }
+
+   .copyRight {
+    font-size: 0.75rem;
+  }
+}

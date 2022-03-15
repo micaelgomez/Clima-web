@@ -3,7 +3,7 @@ import "./App.css";
 import Nav from "./components/nav/Nav";
 import Cards from "./components/cards/Cards";
 import { Footer } from "./components/footer/Footer";
-const { React_App_API_KEY, React_App_API_KEY_2 } = process.env;
+const { React_App_API_KEY_2 } = process.env;
 
 export default function App() {
   const [cities, setCities] = useState([]);
@@ -42,7 +42,8 @@ export default function App() {
   return (
     <div className="App">
       <Nav onSearch={onSearch} /> <h1>The Weather Channel </h1>
-      <Cards cities={cities} onClose={onClose} /> <Footer />
+      <Cards cities={cities} onClose={onClose} /> 
+      <Footer />
     </div>
   );
 }
