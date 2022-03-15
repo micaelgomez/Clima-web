@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../logoHenry.png";
+
 import SearchBar from "../searchBar/SearchBar";
 import "./nav.css";
 
@@ -9,7 +9,7 @@ function Nav({ onSearch }) {
   return (
     <nav>
       <div className="flex mar">
-        <img src={Logo} alt="Logo Henry" />
+        <img src="assets/logoHenry.png" alt="Logo Henry" />
         <span>Weather </span>
       </div>
       <div className="flex search">
