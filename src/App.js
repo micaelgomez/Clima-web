@@ -41,8 +41,11 @@ export default function App() {
 
   return (
     <div className="App">
-      <Nav onSearch={onSearch} /> <h1>The Weather Channel </h1>
-      <Cards cities={cities} onClose={onClose} /> 
+      <Nav onSearch={onSearch} />
+      <h1 className="title-weather">The Weather Channel </h1>
+      <div className="medio">
+        <Cards cities={cities} onClose={onClose} />
+      </div>
       <Footer />
     </div>
   );

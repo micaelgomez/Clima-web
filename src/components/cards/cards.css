@@ -1,12 +1,46 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
 }
 
 .cards-loading {
-  max-width: 80%;
+  max-width: 70%;
   background: rgba(0, 0, 0, 0.5);
   margin: 0 auto;
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.cards-loading-wrapper {
+  max-width: 50%;
+  padding: 2em;
+  color: #fff;
+  text-align: left;
+}
+
+.cards-loading-title {
+  text-align: center;
+  border-bottom: 1px solid yellow;
+}
+
+.cards-loading-img {
+  padding: 2em;
+  color: yellow;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 530px) {
+  
+  .cards-loading {
+    flex-direction: column;
+  }
+  .cards-loading-title {
+    text-align: left;
+  }
+
 }
