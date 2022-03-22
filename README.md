@@ -15,7 +15,7 @@ This project was developed within henry bootcamp, this was my first React applic
 - Css (Responsive - Media Query)
 - Fetch
 
-## Preyect
+## Link
 - https://clima-web.vercel.app/
 
 ## Available Scripts
